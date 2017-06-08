@@ -8,8 +8,9 @@ import { Category } from './models/category';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  books = [new Book()];
-  categories = [new Category()];
+  books = [new Book('B001', '100 Años de Soledad', 'Gabriel García Marquez', 'Novels', 50),
+  new Book('B002', 'La Cegua', 'María Gomez', 'Mistery', 45)];
+  categories = [new Category('C001', 'Novels'), new Category('C002', 'Mistery')];
 
   receivedBook(book) {
     this.books.push(book);

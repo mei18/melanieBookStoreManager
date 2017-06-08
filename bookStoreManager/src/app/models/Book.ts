@@ -1,12 +1,12 @@
 export class Book {
 
-    private bookId: number;
+    private bookId: string;
     private bookName: string;
     private author: string;
     private bookCategory: string;
     private price: number;
 
-    constructor(bookId: number, bookName: string, author: string, bookCategory: string, price: number) {
+    constructor(bookId: string, bookName: string, author: string, bookCategory: string, price: number) {
         this.setBookId(bookId);
         this.setBookName(bookName);
         this.setAuthor(author);
